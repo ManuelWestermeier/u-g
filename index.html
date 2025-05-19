@@ -20,15 +20,13 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://source.unsplash.com/1600x900/?football,stadium') no-repeat center center fixed;
-      background-size: cover;
+      background: var(--dark);
       color: var(--light);
       line-height: 1.6;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.6) url('https://source.unsplash.com/1600x400/?arsenal,football') no-repeat center center;
-      background-size: cover;
+      background: var(--accent);
       padding: 2rem 1rem;
       text-align: center;
       text-shadow: 0px 0px 12px black;
@@ -40,7 +38,7 @@
     }
 
     nav {
-      background: rgba(17, 17, 17, 0.8);
+      background: #111;
       display: flex;
       justify-content: center;
       padding: 1rem 0;
@@ -61,9 +59,6 @@
       padding: 4rem 2rem;
       max-width: 900px;
       margin: auto;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
-      margin-bottom: 2rem;
     }
 
     section h2 {
@@ -72,22 +67,16 @@
       font-size: 2rem;
     }
 
-    .about {
-      background: url('https://source.unsplash.com/900x300/?supporters') no-repeat center center;
-      background-size: cover;
-    }
-
-    .about p,
-    .mission p {
+    .about p, .mission p {
       margin-bottom: 1rem;
-      background: rgba(0,0,0,0.7);
-      padding: 0.5rem;
-      border-radius: 5px;
     }
 
-    .mission {
-      background: url('https://source.unsplash.com/900x300/?team,celebration') no-repeat center center;
-      background-size: cover;
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
 
     .cta-button {
@@ -107,29 +96,8 @@
       background: #e0a800;
     }
 
-    #memes {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin: 2rem;
-    }
-
-    #memes img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    }
-
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
     a {
-      color: var(--accent);
+      color: var(--accent);;
     }
   </style>
 </head>
@@ -156,16 +124,6 @@
     <h2>Unsere Mission</h2>
     <p>Wir schaffen einen Raum für gleichgesinntes Goonen & Dreuzgoonen</p>
     <a class="cta-button" href="#kontakt">Join the Movement</a>
-  </section>
-
-  <section id="memes">
-    <h2>Unsere Memes</h2>
-    <div id="memes">
-      <img src="https://i.imgflip.com/4/1bij.jpg" alt="Gooner Meme 1">
-      <img src="https://i.imgflip.com/26am.jpg" alt="Gooner Meme 2">
-      <img src="https://i.imgflip.com/2fm6x.jpg" alt="Gooner Meme 3">
-      <img src="https://i.imgflip.com/30b1gx.jpg" alt="Gooner Meme 4">
-    </div>
   </section>
 
   <section id="kontakt">
